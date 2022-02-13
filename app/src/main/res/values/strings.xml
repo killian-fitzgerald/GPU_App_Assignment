@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GPU</string>
+    <string name="button_addGPU">Add GPU</string>
+    <string name="hint_GPUTitle">GPU Name</string>
+    <string name="hint_gpuDescription">Description </string>
+    <string name="menu_addGpu">Add</string>
+    <string name="menu_cancelGPU">Cancel</string>
+    <string name="enter_GPU_title"> Please enter a GPU Title </string>
+    <string name="save_gpu"> Save gpu </string>
+    <string name="button_addImage"> Add Image </string>
+    <string name="select_gpu_image">Select GPU image</string>
+    <string name="change_gpu_image">Change GPU image</string>
+    <string name="button_location">Set Location</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="menu_deleteGPU">Delete</string>
+    <string name="title_activity_gpu_maps">Map of All GPUs </string>
+    <string name="gpu_image_placeholder">GPU Image</string>
+    <string name="gpu_title_placeholder">GPU Title</string>
+<!--    <string name="gpu_description_placeholder">GPU Description</string>-->
+</resources>
