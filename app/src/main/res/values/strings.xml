@@ -16,5 +16,5 @@
     <string name="title_activity_gpu_maps">Map of All GPUs </string>
     <string name="gpu_image_placeholder">GPU Image</string>
     <string name="gpu_title_placeholder">GPU Title</string>
-<!--    <string name="gpu_description_placeholder">GPU Description</string>-->
+
 </resources>
