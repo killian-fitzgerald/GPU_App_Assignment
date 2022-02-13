@@ -77,11 +77,6 @@ class GPUListActivity : AppCompatActivity(), GPUListener {
         refreshIntentLauncher.launch(launcherIntent)
     }
 
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        binding.recyclerView.adapter?.notifyDataSetChanged()
-//        super.onActivityResult(requestCode, resultCode, data)
-//    }
-
     private fun registerRefreshCallback() {
         refreshIntentLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult())
@@ -108,34 +103,3 @@ class GPUListActivity : AppCompatActivity(), GPUListener {
 
 }
 
-
-
-//class GpuAdapter constructor(private var gpus: List<GPUModel>) :
-//    RecyclerView.Adapter<GpuAdapter .MainHolder>() {
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainHolder {
-//        val binding = CardGpuBinding
-//            .inflate(LayoutInflater.from(parent.context), parent, false)
-//
-//        return MainHolder(binding)
-//    }
-//
-//    override fun onBindViewHolder(holder: MainHolder, position: Int) {
-//        val gpu = gpus[holder.adapterPosition]
-//        holder.bind(gpu)
-//
-//    }
-//
-//    override fun getItemCount(): Int = gpus.size
-//
-//    class MainHolder(private val binding : CardGpuBinding) :
-//        RecyclerView.ViewHolder(binding.root) {
-//
-//        fun bind(gpu: GPUModel) {
-//            binding.gpuTitle.text = gpu.title
-//            binding.description.text = gpu.description
-//        }
-//    }
-
-//
-//}
