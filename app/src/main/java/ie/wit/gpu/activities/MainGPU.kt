@@ -25,7 +25,7 @@ class MainGPU : AppCompatActivity() {
     private lateinit var mapIntentLauncher : ActivityResultLauncher<Intent>
 //    var location = Location(52.245696, -7.139102, 15f)
     var gpu = GPUModel()
-    //val gpus = ArrayList<GPUModel>()
+
     lateinit var app: MainApp
 
     var edit = false
@@ -93,13 +93,6 @@ class MainGPU : AppCompatActivity() {
 
         }
 
-//        binding.gpuLocation.setOnClickListener {
-//            val location = Location(52.245696, -7.139102, 15f)
-//            val launcherIntent = Intent(this, MapActivity::class.java)
-//                .putExtra("location", location)
-//            mapIntentLauncher.launch(launcherIntent)
-//        }
-
         binding.gpuLocation.setOnClickListener {
             val location = Location(52.245696, -7.139102, 15f)
             if (gpu.zoom != 0f) {
@@ -137,14 +130,6 @@ class MainGPU : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when (item.itemId) {
-//            R.id.item_cancel -> {
-//                finish()
-//            }
-//        }
-//        return super.onOptionsItemSelected(item)
-//    }
 
     private fun registerImagePickerCallback() {
         imageIntentLauncher =

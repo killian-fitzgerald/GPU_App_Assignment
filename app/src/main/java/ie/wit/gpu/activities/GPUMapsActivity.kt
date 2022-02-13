@@ -39,7 +39,7 @@ class GPUMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListener {
         app.gpus.findAll().forEach {
             val loc = LatLng(it.lat, it.lng)
             val options = MarkerOptions().title(it.title).position(loc)
-//            val options = MarkerOptions().description(it.description).position(loc)
+
             map.addMarker(options).tag = it.id
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, it.zoom))
         }
@@ -47,7 +47,7 @@ class GPUMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListener {
 
     override fun onMarkerClick(marker: Marker): Boolean {
         contentBinding.currentTitle.text = marker.title
-//        contentBinding.currentDescription.text = marker.description
+
         return false
     }
 
